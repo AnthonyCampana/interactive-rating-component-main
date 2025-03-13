@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution url](https://github.com/AnthonyCampana/interactive-rating-component-main)
+- Live Site URL: [Live Site url](https://anthonycampana.github.io/interactive-rating-component-main/)
 
 ## My process
 
@@ -56,10 +56,10 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/) - 
+- [Example resource 1](https://developer.mozilla.org/en-US/) - Utilized this resource to understand what css properties I need to use
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Anthony Campana](https://www.your-site.com)
 - Frontend Mentor - [@AnthonyCampana](https://www.frontendmentor.io/profile/yourusername)
 
