@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 376px) {
+    
+    body {
+        width: 100vw;
+        height: 102vh;
+    }
+
+    main {
+        width: 100%;
+        height: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(216, 12%, 8%);
+        margin-top: .2%;
+    }
+
+    .rating {
+        background: radial-gradient(circle at center top, hsl(213, 20%, 18%),hsl(215, 27%, 12%));
+        width: 24.7%;
+        height: 49.5%;
+        border-radius: 10%;
+        padding: 1.6% 2% 0% 2%;
+    }
+
+    .star-image-background {
+        background-color: hsl(213, 19%, 18%);
+        width: 13%;
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 3.1% 0% 8.7% 1.3%;
+    }
+
+    .star-image {
+        width: 35%;
+        height: 38%;
+    }
+
+    .form-container {
+        padding-left: .8%;
+        height: 77%;
+    }
+
+    .review-title {
+        font-weight: 700;
+        font-family: 'Overpass', sans-serif;
+        font-size: 1.74em;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 2.5%;
+    }
+
+    .review-description {
+        color: hsl(216, 12%, 54%);
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Overpass', sans-serif;
+        line-height: 25px;
+        margin-bottom: 3.1%;
+        padding-left: .35%;
+    }
+    
+    .review-score {
+        height: 27%;
+        width: 98%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .score-value-container {
+        width: 18%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .score-value {
+        width: 85%;
+        height: 60%;
+        border-radius: 50%;
+        color: hsl(217, 12%, 63%);
+        background-color: hsl(213, 19%, 18%);
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .score-value:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .active {
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .submit-review {
+        width: 97%;
+        height: 14%;
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        border: 0px;
+        font-size: 14px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        padding-top: 1%;
+    }
+
+    .submit-review:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+    }
+
+    /* This is where review section starts*/
+    .submitted-review {
+        display: none;
+        background: radial-gradient(circle at center top, hsl(213, 20%, 18%),hsl(215, 27%, 12%));
+        width: 24.7%;
+        height: 45%;
+        border-radius: 10%;
+        padding: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submitted-review > img {
+        margin-top: 5%;
+        margin-bottom: 9%;
+        width: 45%;
+        margin-right: 2%;
+    }
+
+    .display-score {
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 20px;
+        margin-bottom: 9.9%;
+        width: 54%;
+        height: 9%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .display-score > p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Overpass', sans-serif;
+        color: hsl(25, 80%, 52%);
+        padding-top: 1%;
+    }
+
+    .thank-you-title {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 3%;
+        font-size: 27px;
+    }
+
+    .thank-you-description {
+        font-size: 15px;
+        font-family: 'Overpass', sans-serif;
+        color: hsl(216, 12%, 54%);
+        font-weight: 400;
+        text-align: center;
+        width: 95%;
+        line-height: 24px;
+        margin-right: 2.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    main {
+        width: 100%;
+        height: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(216, 12%, 8%);
+    }
+
+    .rating {
+        background: radial-gradient(circle at center top, hsl(213, 20%, 18%),hsl(215, 27%, 12%));
+        width: 75.4%;
+        height: 48%;
+        border-radius: 5%;
+        padding: 6%;
+        margin-top: 4%;
+    }
+
+    .star-image-background {
+        background-color: hsl(213, 19%, 18%);
+        width: 14%;
+        height: 13%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 6.6%;
+        margin-left: 1%;
+    }
+
+    .star-image {
+        width: 35%;
+        height: 32%;
+    }
+    
+    .form-container {
+        height: 80%;
+    }
+
+    .review-title {
+        font-weight: 700;
+        font-family: 'Overpass', sans-serif;
+        font-size: 24px;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 4%;
+        padding-left: .3%;
+    }
+
+    .review-description {
+        color: hsl(216, 12%, 54%);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Overpass', sans-serif;
+        line-height: 22px;
+        margin-bottom: 9.5%;
+        padding-left: .4%;
+        width: 97.8%
+    }
+    
+    .review-score {
+        height: 17%;
+        width: 100%;
+        margin-bottom: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .score-value-container {
+        width: 15.5%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score-value {
+        width: 100%;
+        height: 95%;
+        border-radius: 50%;
+        color: hsl(217, 12%, 63%);
+        background-color: hsl(213, 19%, 18%);
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        padding-top: 5%;
+    }
+
+    .score-value:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .active {
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .submit-review {
+        width: 100%;
+        height: 19%;
+        margin-left: 1%;
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        font-size: 13px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        margin-left: 0%;
+        padding-top: 1%;
+        padding-right: 1%;
+    }
+
+    .submit-review:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+    }
+
+    /* thank you display */
+    .submitted-review {
+        display: none;
+        background: radial-gradient(circle at center top, hsl(213, 20%, 18%),hsl(215, 27%, 12%));
+        width: 80%;
+        height: 50.7%;
+        border-radius: 5%;
+        padding: 4%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3.5%;
+    }
+
+    .submitted-review > img {
+        margin-top: 7%;
+        margin-bottom: 7.5%;
+        width: 48%;
+    }
+
+    .display-score {
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 20px;
+        margin-bottom: 9%;
+        width: 56%;
+        height: 9.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .display-score > p {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Overpass', sans-serif;
+        color: hsl(25, 80%, 52%);
+        padding-top: 1.8%;
+    }
+
+    .thank-you-title {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 4.5%;
+        font-size: 23.3px;
+    }
+
+    .thank-you-description {
+        font-size: 14px;
+        font-family: 'Overpass', sans-serif;
+        color: hsl(216, 12%, 54%);
+        font-weight: 400;
+        text-align: center;
+        width: 97%;
+        line-height: 21px;
+    }    
+}
+
+
+
+.attribution { height: 2%; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

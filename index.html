@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main> 
+      <!-- Rating state start -->
+      <div class="rating">
+
+        <div class="star-image-background"> 
+          <img class="star-image" src="./images/icon-star.svg" alt="star image">
+        </div>
+        <div class="form-container">
+          <h3 class="review-title"> How did we do? </h3>
+
+          <p class="review-description"> 
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+
+          <div class="review-score"> 
+            <div class="score-value-container"> 
+              <button type="button" class="score-value" > 1 </button>
+            </div>
+            <div class="score-value-container">
+              <button type="button" class="score-value" > 2 </button>
+            </div>
+            <div class="score-value-container"> 
+              <button type="button" class="score-value" > 3 </button>
+            </div>
+            <div class="score-value-container"> 
+              <button type="button" class="score-value"> 4 </button>
+            </div>
+            <div class="score-value-container">
+              <button type="button" class="score-value" > 5 </button>
+            </div>
+          </div>
+
+          <button class="submit-review "> S U B M I T </button>
+        </div>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="submitted-review">
+        <img src="./images/illustration-thank-you.svg" alt=""> 
+        
+        <div class="display-score">
+          <p> You selected <span id="review-score"></span> out of 5 </p>
+        </div>
+
+        <h1 class="thank-you-title"> Thank you! </h1>
+
+        <p class="thank-you-description"> 
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Anthony Campana</a>.
+    </div>
+    
+    <script src="./scripts/index.js" ></script>
+  </body>
+</html>
